@@ -13,39 +13,61 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Next.js on Replit!</h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <div className={styles.hero}>
+          <h1 className={styles.title}>
+            Welcome to <span className={styles.gradient}>Next.js</span>
+          </h1>
+          <p className={styles.subtitle}>
+            The React Framework for Production
+          </p>
+          <p className={styles.description}>
+            Get started by editing{" "}
+            <code className={styles.code}>pages/index.tsx</code>
+          </p>
+        </div>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>📚</div>
+            <h3>Documentation</h3>
             <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+            <a href="https://nextjs.org/docs" className={styles.cardLink}>
+              Learn more →
+            </a>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>🎓</div>
+            <h3>Learn</h3>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <a href="https://nextjs.org/learn" className={styles.cardLink}>
+              Start learning →
+            </a>
+          </div>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>⚡</div>
+            <h3>Examples</h3>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <a
+              href="https://github.com/vercel/next.js/tree/canary/examples"
+              className={styles.cardLink}
+            >
+              Browse examples →
+            </a>
+          </div>
 
-          <a
-            href="https://docs.replit.com/category/deployments"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>After you are happy with this app, deploy it on Replit!</p>
-          </a>
+          <div className={styles.card}>
+            <div className={styles.cardIcon}>🚀</div>
+            <h3>Deploy</h3>
+            <p>Deploy your Next.js app instantly with zero configuration.</p>
+            <a
+              href="https://docs.replit.com/category/deployments"
+              className={styles.cardLink}
+            >
+              Deploy now →
+            </a>
+          </div>
         </div>
       </main>
     </div>
